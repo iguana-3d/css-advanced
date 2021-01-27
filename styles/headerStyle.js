@@ -24,10 +24,12 @@ export const HeaderStyle = styled.header`
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
+        text-align: center;
         .heading-primary {
-            color: #FFFFFF;
+            color: #ffffff;
             text-transform: uppercase;
-            /* backface-visibility: hidden; */
+            margin-bottom: 60px;
+            backface-visibility: hidden;
             .heading-primary-main {
                 display: block;
                 font-size: 60px;
@@ -42,6 +44,28 @@ export const HeaderStyle = styled.header`
                 letter-spacing: 17.4px;
                 animation: moveInRight 2s ease-out;
             }
+        }
+        .btn {
+            &:link, :visited {
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 15px 40px;
+                display: inline-block;
+                border-radius: 100px;
+                transition: all .2s;
+            }
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(0,0,0,.2);
+            }
+            &:active {
+                transform: translateY(-1px);
+                box-shadow: 0 5px 10px rgba(0,0,0,.2);
+            }
+        }
+        .btn-white {
+            background-color: #fff;
+            color: #777777;
         }
     }
 
