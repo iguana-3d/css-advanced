@@ -4,15 +4,15 @@ import { HeaderStyle } from '../../styles/headerStyle';
 export default function Header(){
     return(
         <HeaderStyle>
-            <div className="logo-box">
-                <img src="/static/images/logo-white.png" alt="logo" className="logo" />
+            <div className="header__logo-box">
+                <img src="/static/images/logo-white.png" alt="logo" className="header__logo" />
             </div>
-            <div className="text-box">
+            <div className="header__text-box">
                 <h1 className="heading-primary">
-                    <span className="heading-primary-main">Outdoors</span>
-                    <span className="heading-primary-sub">is where life happens</span>
+                    <span className="heading-primary--main">Outdoors</span>
+                    <span className="heading-primary--sub">is where life happens</span>
                 </h1>
-                <a href="#" className="btn btn-white btn-animated">Discover our tours</a>
+                <a href="#" className="btn btn--white btn--animated">Discover our tours</a>
             </div>            
         </HeaderStyle>
     )

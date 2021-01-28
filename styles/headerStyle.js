@@ -11,15 +11,15 @@ export const HeaderStyle = styled.header`
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 
-    .logo-box {
+    .header__logo-box {
         position: absolute;
         top: 40px;
         left: 40px;
-        .logo {
+        .header__logo {
             height: 35px;
         }
     }
-    .text-box {
+    .header__text-box {
         position: absolute;
         top: 40%;
         left: 50%;
@@ -30,14 +30,14 @@ export const HeaderStyle = styled.header`
             text-transform: uppercase;
             margin-bottom: 60px;
             backface-visibility: hidden;
-            .heading-primary-main {
+            .heading-primary--main {
                 display: block;
                 font-size: 60px;
                 font-weight: 400;
                 letter-spacing: 35px;
                 animation: moveInLeft 2s ease-out;
             }
-            .heading-primary-sub {
+            .heading-primary--sub {
                 display: block;
                 font-size: 20px;
                 font-weight: 700;
@@ -80,14 +80,14 @@ export const HeaderStyle = styled.header`
                 transition: all .4s;
             }
         }
-        .btn-white {
+        .btn--white {
             background-color: #fff;
             color: #777777;
             &:after {
                 background-color: #fff;
             }
         }
-        .btn-animated {
+        .btn--animated {
             animation: moveInBottom .8s ease-out .75s;
             animation-fill-mode: backwards;
         }
