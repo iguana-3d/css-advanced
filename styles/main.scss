@@ -1,24 +1,32 @@
-import styled from 'styled-components';
-import { rgba } from 'polished';
-import './abstracts/_functions';
-import './abstracts/_mixins';
-import './abstracts/_variables';
+@import './abstracts/functions';
+@import './abstracts/mixins';
+@import './abstracts/variables';
 
-import './base/_animations';
-import './base/_base';
-import './base/_typography';
-import './base/_utilities';
+@import './base/animations';
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
 
-import './pages/_home';
+@import './pages/_home';
 
-export const HeaderStyle = styled.header`
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 30px;
+}
+
+.header {
     height: 95vh;
-    background-image: linear-gradient(
-        to right bottom, 
-        ${props => rgba(`${props.theme.colorPrimaryLight}`, 0.8)},
-        ${props => rgba(`${props.theme.colorPrimaryDark}`, 0.8)}),
-        url('/static/images/hero.jpg');
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('/static/images/hero.jpg');
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
@@ -38,7 +46,7 @@ export const HeaderStyle = styled.header`
         transform: translate(-50%, -50%);
         text-align: center;
         .heading-primary {
-            color: ${props => props.theme.colorWhite};
+            color: $color-white;
             text-transform: uppercase;
             margin-bottom: 60px;
             backface-visibility: hidden;
@@ -70,7 +78,7 @@ export const HeaderStyle = styled.header`
             }
             &:hover {
                 transform: translateY(-3px);
-                box-shadow: 0 10px 20px ${props => rgba(`${props.theme.colorBlack}`, 0.2)};
+                box-shadow: 0 10px 20px rgba($color-black, 0.2);
                 &::after {
                     transform: scaleX(1.4) scaleY(1.6);
                     opacity: 0;
@@ -78,7 +86,7 @@ export const HeaderStyle = styled.header`
             }
             &:active {
                 transform: translateY(-1px);
-                box-shadow: 0 5px 10px ${props => rgba(`${props.theme.colorBlack}`, 0.2)};
+                box-shadow: 0 5px 10px rgba($color-black, 0.2);
             }
             &::after {
                 content: '';
@@ -94,10 +102,10 @@ export const HeaderStyle = styled.header`
             }
         }
         .btn--white {
-            background-color: ${props => props.theme.colorWhite};
-            color: ${props => props.theme.colorGreyDark};
+            background-color: $color-white;
+            color: $color-grey-dark;
             &::after {
-                background-color: ${props => props.theme.colorWhite};
+                background-color: $color-white;
             }
         }
         .btn--animated {
@@ -145,4 +153,4 @@ export const HeaderStyle = styled.header`
             transform: translate(0);
         }
     }
-`;
+}

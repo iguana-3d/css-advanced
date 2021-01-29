@@ -1,9 +1,8 @@
 import React from 'react';
-import { HeaderStyle } from '../../styles/main';
 
 export default function Header(){
     return(
-        <HeaderStyle>
+        <header className="header">
             <div className="header__logo-box">
                 <img src="/static/images/logo-white.png" alt="logo" className="header__logo" />
             </div>
@@ -14,6 +13,6 @@ export default function Header(){
                 </h1>
                 <a href="#" className="btn btn--white btn--animated">Discover our tours</a>
             </div>            
-        </HeaderStyle>
+        </header>
     )
 }
