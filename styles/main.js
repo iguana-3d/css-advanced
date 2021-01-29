@@ -1,11 +1,23 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
+import './abstracts/_functions';
+import './abstracts/_mixins';
+import './abstracts/_variables';
+
+import './base/_animations';
+import './base/_base';
+import './base/_typography';
+import './base/_utilities';
+
+import './pages/_home';
 
 export const HeaderStyle = styled.header`
+
     height: 95vh;
     background-image: linear-gradient(
         to right bottom, 
-        rgba(126, 213, 111, 0.8), 
-        rgba(40, 180, 131, 0.8)), 
+        ${props => rgba(`${props.theme.colorPrimaryLight}`, 0.8)},
+        ${props => rgba(`${props.theme.colorPrimaryDark}`, 0.8)}),
         url('/static/images/hero.jpg');
     background-size: cover;
     background-position: top;
@@ -26,7 +38,7 @@ export const HeaderStyle = styled.header`
         transform: translate(-50%, -50%);
         text-align: center;
         .heading-primary {
-            color: #ffffff;
+            color: ${props => props.theme.colorWhite};
             text-transform: uppercase;
             margin-bottom: 60px;
             backface-visibility: hidden;
@@ -46,7 +58,8 @@ export const HeaderStyle = styled.header`
             }
         }
         .btn {
-            &:link, :visited {
+            &:link, 
+            :visited {
                 text-transform: uppercase;
                 text-decoration: none;
                 padding: 15px 40px;
@@ -57,17 +70,17 @@ export const HeaderStyle = styled.header`
             }
             &:hover {
                 transform: translateY(-3px);
-                box-shadow: 0 10px 20px rgba(0,0,0,.2);
-                &:after {
+                box-shadow: 0 10px 20px ${props => rgba(`${props.theme.colorBlack}`, 0.2)};
+                &::after {
                     transform: scaleX(1.4) scaleY(1.6);
                     opacity: 0;
                 }
             }
             &:active {
                 transform: translateY(-1px);
-                box-shadow: 0 5px 10px rgba(0,0,0,.2);
+                box-shadow: 0 5px 10px ${props => rgba(`${props.theme.colorBlack}`, 0.2)};
             }
-            &:after {
+            &::after {
                 content: '';
                 display: inline-block;
                 height: 100%;
@@ -81,10 +94,10 @@ export const HeaderStyle = styled.header`
             }
         }
         .btn--white {
-            background-color: #fff;
-            color: #777777;
-            &:after {
-                background-color: #fff;
+            background-color: ${props => props.theme.colorWhite};
+            color: ${props => props.theme.colorGreyDark};
+            &::after {
+                background-color: ${props => props.theme.colorWhite};
             }
         }
         .btn--animated {
