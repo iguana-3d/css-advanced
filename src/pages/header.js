@@ -41,7 +41,11 @@ export default function Header(){
                             </a>
                         </div>
                         <div className="col-1-of-2">
-                            Image composition
+                            <div className="composition">
+                                <img src="/static/images/nat-1-large.jpg" alt="Photo 1" className="composition__photo composition__photo--p1"/>
+                                <img src="/static/images/nat-2-large.jpg" alt="Photo 2" className="composition__photo composition__photo--p2"/>
+                                <img src="/static/images/nat-3-large.jpg" alt="Photo 3" className="composition__photo composition__photo--p3"/>
+                            </div>
                         </div>
                     </div>
                 </section>
