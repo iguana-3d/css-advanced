@@ -17,14 +17,28 @@ export default function Header(){
             </header>
             <main>
                 <section className="section-about">
-                    <div className="u-center-text u-margin-bottom-8">
+                    <div className="u-center-text u-margin-bottom-big">
                         <h2 className="heading-secondary">
                             Exciting tour for adventurous people
                         </h2>
                     </div>
                     <div className="row">
                         <div className="col-1-of-2">
-                            Text Content
+                            <h3 className="heading-tertiary u-margin-bottom-small">
+                                You're going to fall in love with nature
+                            </h3>
+                            <p className="paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore totam animi voluptas optio ratione recusandae, quo illo. Assumenda et esse rem ut, aspernatur consequuntur. Corrupti unde praesentium voluptatum iure laudantium?
+                            </p>
+                            <h3 className="heading-tertiary u-margin-bottom-small">
+                                Like adventures like you never have before
+                            </h3>
+                            <p className="paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore totam animi voluptas optio ratione recusandae, quo illo.
+                            </p>
+                            <a href="#" className="btn-text">
+                                Learn more &rarr;
+                            </a>
                         </div>
                         <div className="col-1-of-2">
                             Image composition
