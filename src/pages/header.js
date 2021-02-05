@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionBook from './sectionBook';
 
 export default function Header(){
     return(
@@ -206,6 +207,13 @@ export default function Header(){
                     </div>
                 </section>
                 <section className="section-stories">
+                    <div className="bg-video">
+                        <video className="bg-video__content" autoPlay muted loop>
+                            <source src="/static/videos/video.mp4" type="video/mp4" />
+                            <source src="/static/videos/video.webm" type="video/webm" />
+                            Your browser is not suported!  
+                        </video>
+                    </div>
                     <div className="u-center-text u-margin-bottom-big">
                         <h2 className="heading-secondary">
                             We make people genuinely happy
@@ -251,6 +259,7 @@ export default function Header(){
                         <a href="#" className="btn-text">Read all stories &rarr;</a>
                     </div>
                 </section>
+                <SectionBook />
             </main>
             {/* <section className="grid-test">
                 <div className="row">
