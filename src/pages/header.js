@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionBook from './sectionBook';
+import Footer from './footer';
 
 export default function Header(){
     return(
@@ -261,6 +262,7 @@ export default function Header(){
                 </section>
                 <SectionBook />
             </main>
+            <Footer />
             {/* <section className="grid-test">
                 <div className="row">
                     <div className="col-1-of-2">
