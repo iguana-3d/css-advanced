@@ -1,10 +1,12 @@
 import React from 'react';
+import Navigation from './navigation';
 import SectionBook from './sectionBook';
 import Footer from './footer';
 
 export default function Header(){
     return(
         <>
+        <Navigation />
             <header className="header">
                 <div className="header__logo-box">
                     <img src="/static/images/logo-white.png" alt="logo" className="header__logo" />
