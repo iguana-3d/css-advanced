@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from './navigation';
 import SectionBook from './sectionBook';
 import Footer from './footer';
+import Popup from './popup';
 
 export default function Header(){
     return(
@@ -265,6 +266,7 @@ export default function Header(){
                 <SectionBook />
             </main>
             <Footer />
+            <Popup />
             {/* <section className="grid-test">
                 <div className="row">
                     <div className="col-1-of-2">
