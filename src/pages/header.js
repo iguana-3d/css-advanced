@@ -17,7 +17,7 @@ export default function Header(){
                         <span className="heading-primary--main">Outdoors</span>
                         <span className="heading-primary--sub">is where life happens</span>
                     </h1>
-                    <a href="#" className="btn btn--white btn--animated">Discover our tours</a>
+                    <a href="#section-tours" className="btn btn--white btn--animated">Discover our tours</a>
                 </div>            
             </header>
             <main>
@@ -102,7 +102,7 @@ export default function Header(){
                         </div>
                     </div>
                 </section>
-                <section className="section-tours">
+                <section className="section-tours" id="section-tours">
                     <div className="u-center-text u-margin-bottom-big">
                         <h2 className="heading-secondary">
                             Most popular tours
@@ -136,7 +136,7 @@ export default function Header(){
                                             <p className="card__price-only">Only</p>
                                             <p className="card__price-value">$297</p>
                                         </div>
-                                        <a href="#" className="btn btn--white">Book now</a>
+                                        <a href="#popup" className="btn btn--white">Book now</a>
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +168,7 @@ export default function Header(){
                                             <p className="card__price-only">Only</p>
                                             <p className="card__price-value">$497</p>
                                         </div>
-                                        <a href="#" className="btn btn--white">Book now</a>
+                                        <a href="#popup" className="btn btn--white">Book now</a>
                                     </div>
                                 </div>
                             </div>
@@ -200,7 +200,7 @@ export default function Header(){
                                             <p className="card__price-only">Only</p>
                                             <p className="card__price-value">$897</p>
                                         </div>
-                                        <a href="#" className="btn btn--white">Book now</a>
+                                        <a href="#popup" className="btn btn--white">Book now</a>
                                     </div>
                                 </div>
                             </div>
