@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Natours | Exciting tours for adventurous</title>
+        <link rel="icon" href="/static/images/favicon.png" />
       </Head>
       <Header />
     </>     

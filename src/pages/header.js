@@ -47,9 +47,29 @@ export default function Header(){
                         </div>
                         <div className="col-1-of-2">
                             <div className="composition">
-                                <img src="/static/images/nat-1-large.jpg" alt="Photo 1" className="composition__photo composition__photo--p1"/>
+                                <img srcSet="/static/images/nat-1.jpg 300w, /static/images/nat-1-large.jpg 1000w" 
+                                     sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+                                     alt="Photo 1" 
+                                     className="composition__photo composition__photo--p1"
+                                     src="/static/images/nat-1-large.jpg" />
+
+                                <img srcSet="/static/images/nat-2.jpg 300w, /static/images/nat-2-large.jpg 1000w" 
+                                     sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+                                     alt="Photo 2" 
+                                     className="composition__photo composition__photo--p2"
+                                     src="/static/images/nat-2-large.jpg" />
+
+                                <img srcSet="/static/images/nat-3.jpg 300w, /static/images/nat-3-large.jpg 1000w" 
+                                     sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+                                     alt="Photo 3" 
+                                     className="composition__photo composition__photo--p3"
+                                     src="/static/images/nat-3-large.jpg" />
+
+
+
+                                {/* <img src="/static/images/nat-1-large.jpg" alt="Photo 1" className="composition__photo composition__photo--p1"/>
                                 <img src="/static/images/nat-2-large.jpg" alt="Photo 2" className="composition__photo composition__photo--p2"/>
-                                <img src="/static/images/nat-3-large.jpg" alt="Photo 3" className="composition__photo composition__photo--p3"/>
+                                <img src="/static/images/nat-3-large.jpg" alt="Photo 3" className="composition__photo composition__photo--p3"/> */}
                             </div>
                         </div>
                     </div>
